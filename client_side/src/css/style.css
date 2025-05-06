@@ -1,0 +1,1626 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Outfit;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+}
+section{
+    height: 100vh;
+    padding-top: 25px;
+}
+.my_section{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+:root{
+    --mainText: #5F6FFF;
+    --secondColor :#FBFBEE;
+    --blackText1:#1F2937;
+    --blackText2:#4B5563;
+}
+
+.white_btn:hover{
+    background-color: var(--mainText) !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+.blue_btn{
+    background-color: var(--mainText) !important;
+    border-radius: 43px !important;
+    color: white !important;
+}
+.blue_btn:hover{
+    background-color: white !important;
+    color: var(--mainText) !important;
+    border: 1px solid var(--mainText) !important;
+}
+.card a{
+    text-decoration: none ;
+    color: inherit ;
+}
+
+
+/* Home */
+.landing_page{
+    height: fit-content !important;
+}
+.landing_name{
+    color:#000B6D !important ;
+    font-family: Outfit;
+    font-weight: bold;
+    font-size: 34px !important;
+    line-height: 100%;
+    letter-spacing: 0%;
+    position: relative;
+}
+.landing_name span{
+    margin-top: 25% !important;
+    margin-left: 10px !important;
+    position: absolute !important;
+}
+.navbar .container{
+    border-bottom: 1px solid gray !important;
+    padding-bottom: 10px;
+}
+.navbar .create_acc{
+    margin-left: 23%;
+    border-radius: 47px;
+    background-color: var(--mainText);
+    color: white !important;
+    font-family: Outfit;
+font-weight: 400;
+font-size: 18px;
+line-height: 43px;
+transition: all 0.4s ease-in-out !important;
+}
+.navbar .create_acc:hover{
+    border: 1px solid gray !important;
+    color: gray !important;
+}
+
+@media (max-width:1400px) and (min-width: 1200px){
+    .navbar .create_acc{
+        margin-left: 17%;
+    }
+    
+}
+@media (max-width: 1200px){
+    .navbar .create_acc{
+        margin-left: 10%;
+    }
+    
+}
+@media (max-width: 992px){
+    .navbar .create_acc{
+        margin-left: 0;
+    }
+    
+}
+
+.navbar .nav-item {
+    display: inline-block;
+    position: relative;
+    padding: 5px 5px;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    /* text-align: center; */
+    vertical-align: middle;
+    text-transform: uppercase;
+
+}
+
+.navbar .nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    transform: translateX(-50%);
+    background-color: var(--mainText);
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar .nav-item:hover::after {
+    width: 50%;
+}
+@media (max-width: 992px){
+    .navbar .nav-item:hover::after {
+        width: 100%;
+    }
+}
+
+.Home_content{
+    margin-top: 30px;
+    padding: 50px;
+    padding-bottom: 0;
+    background-color: var(--mainText);
+    color: white;
+    border-radius: 12px;
+}
+@media (min-width: 1200px){
+    .Home_content{
+        height: 70% !important;
+
+    }
+    
+}
+.home_content_row{
+    height: 100% !important;
+}
+.home_content_left{
+    padding-left: 50px !important;
+}
+.home_content_left h1{
+    font-family: Outfit;
+    font-weight: 600 !important;
+    font-size: 63px !important;
+    line-height: 80px !important;
+    letter-spacing: 0%;
+    vertical-align: middle !important;
+    padding-bottom: 20px !important;
+}
+@media  (max-width: 1400px) and (min-width: 1200px){
+    .home_content_left h1{
+        font-size: 50px !important;
+        line-height: 60px !important;
+    }
+    
+}
+@media (max-width: 1200px){
+    .home_content_left h1{
+        font-size: 40px !important;
+        line-height: 50px !important;
+    }
+    
+}
+/* .home_content_left *{
+    padding-bottom:20px !important;
+} */
+.home_content_left .home_content_left_para_text{
+    font-family: Outfit;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0%;
+vertical-align: middle;
+margin-left: 10px !important;
+
+}
+.home_content_left_para{
+    padding-bottom: 20px !important;
+
+}
+.home_content_left_btn{
+    background-color: white !important;
+    color: var(--blackText1) !important;
+    border-radius: 47px !important;
+    border: none !important;
+    padding: 20px 30px 15px 30px !important;
+}
+.home_content_left_btn i{
+    margin-left: 5px;
+}
+
+.home_content_right{
+    position: relative !important;
+    height: fit-content !important;
+    align-self: end;
+}
+.home_content_right img{
+    width: 100% !important;
+}
+
+/* component header */
+
+.com_header{ 
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+.com_header h1{
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    text-align: center;    
+}
+.com_header h2 {
+    font-family: Outfit;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+padding-top: 10px !important;
+}
+
+/* about  */
+.about{
+    overflow: hidden;
+}
+.about .about_cards{
+    width: 80%;
+    margin: auto;
+}
+@media (min-width:992px) and (max-width:1200px) {
+    .about .about_cards{
+        width: 85%;
+    }
+}
+.simple_card {
+    transition: all 0.4s ease-in-out !important;
+    cursor: pointer;
+    padding-top: 30px !important ;
+}
+.simple_card:hover{
+    transform: translateY(-20px) !important;
+}
+
+.simple_card p{
+    text-align: center;
+    font-family: Outfit;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+padding-top: 15px !important;
+
+}
+
+/* top doctors */
+
+
+.card {
+    margin-bottom: 30px !important;
+    padding: 0 !important;
+    border-radius: 12px !important;
+    margin-left: 1px !important;
+    text-align: start !important;
+    transition: all 0.3s ease-in-out !important;
+    cursor: pointer;
+}
+/* .top_doctors .card {
+    margin-left: 3% ;
+} */
+ .card:hover {
+    transform: translateY(-20px) !important;
+    box-shadow: 0 8px 20px rgba(27, 27, 27, 0.1) !important;
+}
+/* .top_doctors .card .card-body{
+} */
+.card img{
+    background-color:#EAEFFF ;
+    height: 270px !important;
+}
+.card h3 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 100%;
+}
+.card li { 
+    color: #0FBF00 !important;
+    padding-bottom: 15px !important;
+    font-size: 18px !important;
+    color: rgba(38, 38, 38, 1);
+}
+.card p { 
+    color: rgba(75, 85, 99, 1) !important;
+    font-size: 15px !important;
+}
+.top_doctors button{
+    width: 214px !important;
+    height: 60px;
+    top: 2420px;
+    left: 855px;
+    border-radius: 50px;
+    background-color: #EAEFFF;
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: 30px;
+    padding: 15px 40px !important;
+}
+@media (max-width:576px) {
+    .top_doctors .cards{
+        justify-content: center !important;
+    }
+}
+.top_doctors .more_btn{
+    background-color:rgba(234, 239, 255, 1) !important;
+    color: var(--blackText1) !important;
+}
+.top_doctors .more_btn:hover{
+    border: none !important;
+}
+/* panel */
+.panel_section{
+    margin-top: 200px !important;
+}
+@media (max-width: 1200px){
+    .panel_section{
+        margin-top: 100px !important;
+    }
+    
+}
+@media (max-width: 768px){
+    .panel_section{
+        margin-top: 60px !important;
+    }
+    
+}
+.panel_content{
+    background-color: var(--mainText) !important;
+    color: white;
+    border-radius: 12px;
+    /* height: 455px !important; */
+}
+.panel_content .panel_right{
+    position: relative !important;
+    /* height: 100% !important; */
+}
+.panel_content .panel_left{
+    height: 100% !important;
+    padding: 50px !important;
+}
+.panel_content .panel_left h1{
+    font-family: Outfit;
+    font-weight: 700;
+    line-height: 90px;
+    letter-spacing: 0%;
+    
+}
+@media (min-width:992px) {
+    .panel_content .panel_left h1{
+        font-size: 52px;
+
+    }
+
+}
+
+.panel_content .panel_left a{
+    background-color: white !important;
+    color: var(--blackText1) !important;
+    border-radius: 47px !important;
+    border: none !important;
+    padding: 20px 30px 15px 30px !important;
+}
+.panel_content .panel_left a:hover{
+    background-color: var(--mainText) !important;
+    color: white !important;
+    border: 1px solid white !important;
+}
+.panel_content img{
+    /* width: 100% !important; */
+    height: 530px !important;
+    border-radius: 12px !important;
+    position: absolute;
+    /* top: -85px; */
+    /* right: 0 !important; */
+    left: 0;
+    bottom: 0;
+}
+
+
+/* Footer section */
+.footer_section{
+    margin-top: 120px !important;
+    padding-bottom: 0 !important;
+}
+@media (max-width: 768px){
+    .footer_section{
+        margin-top: 50px !important;
+    }
+    .footer_left p{
+    padding-right: 0 !important;
+    margin-bottom: 30px !important;
+    }
+}
+.footer_left p{
+    font-family: Outfit;
+font-size: 16px;
+line-height: 30px;
+letter-spacing: 0%;
+margin-top: 30px !important;
+padding-right: 120px ;
+}
+.footer_mid ul , .footer_right ul{
+    margin-top: 30px !important;
+}
+.footer_mid h1 , .footer_right h1 {
+    font-family: Outfit;
+font-weight: 600;
+font-size: 22px;
+line-height: 30px;
+letter-spacing: 0%;
+}
+.footer_mid li , .footer_right li {
+    border: none !important;
+    padding-left: 0 !important;
+}
+.footer_mid li a , .footer_right li a{
+    color: var(--blackText2) !important;
+    text-decoration: none !important;
+}
+.copy_para{
+    text-align: center !important;
+}
+
+
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* AboutUS Page */
+
+.aboutus_content .aboutus_content_top_left img {
+    height: 100% !important;
+    width: 100% !important;
+}
+.aboutus_content .aboutus_content_top_right p{
+    font-family: Outfit;
+font-weight: 400;
+line-height: 180%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+}
+@media (min-width:992px) {
+    .aboutus_content .aboutus_content_top_right p{
+    font-size: 18px;
+    }
+}
+.aboutus_content .aboutus_content_top_right span{
+    font-family: Outfit;
+font-weight: 700;
+font-size: 18px;
+line-height: 180%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+}
+@media (max-width:768px) {
+    .aboutus_content .aboutus_content_top_right{
+        margin-top: 35px !important;
+    }
+}
+
+.aboutus_content .com_header h1{
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.aboutus_content .com_header span{
+    font-family: Outfit;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;   
+}
+
+.aboutus_content_bottom{
+    margin-top: 130px !important;
+    margin-bottom: 130px !important;
+}
+.aboutus_content_bottom_title{
+    font-family: Outfit;
+font-weight: 400;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+text-transform: uppercase;
+margin-bottom: 50px !important;
+}
+
+.aboutus_content_bottom_title span{
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    
+}
+.aboutus_content_bottom .layout_element {
+    border: 1px solid #ABABAB !important;
+    padding: 50px !important;
+    transition: all 0.7s ease-in-out !important;
+}
+.aboutus_content_bottom .layout_element:hover {
+    background-color: var(--mainText);
+    color: white !important;
+    border: 1px solid white !important;
+    box-shadow: 0 8px 20px rgba(27, 27, 27, 0.1) !important;
+}
+
+@media (max-width:768px) {
+    .aboutus_content_bottom .layout_element {
+        margin-bottom: 15px !important;
+    }
+    
+}
+.aboutus_content_bottom .layout_element h4 {
+    padding-bottom: 20px !important;
+    font-family: Outfit;
+font-weight: 600;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.aboutus_content_bottom .layout_element p {
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+}
+
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* contact us */
+
+.contactus_content .com_header h1{
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.contactus_content .com_header span{
+    font-family: Outfit;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;   
+}
+.contactus_content_right{
+padding: 60px !important;
+}
+.contactus_content_right h4{
+font-weight: 600;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+.contactus_content_right h2{
+    font-family: Outfit;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.contactus_content_right p {
+    font-family: Outfit;
+font-weight: 400;
+font-size: 18px;
+line-height: 180%;
+letter-spacing: 0%;
+text-transform: capitalize;
+
+}
+.contactus_content_left img{
+    width: 100% !important;
+    height: 100% !important;    
+}
+
+.explore_btn{
+border: 1px solid #ABABAB !important;
+padding: 15px !important;
+border-radius: 0px !important;
+transition: all 0.5s ease-in-out !important;
+}
+.explore_btn:hover{
+background-color: var(--blackText1) !important;
+color: white !important;
+}
+
+
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* all doctors */
+.doctors_page .card {
+    margin-left: 0 !important;
+    width: 23% !important;
+    margin-right: 15px;
+}
+@media (max-width:768px) {
+    .doctors_page .card {
+        margin: auto !important;
+        margin-top: 20px !important;
+    }
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+    .doctors_page .card {
+        width: 30% !important;
+    }
+    
+}
+@media (max-width: 992px) {
+    .doctors_page .card {
+        width: 45% !important;
+    }
+    
+}
+.doctors_content{
+    margin-top: 50px !important;
+}
+.doctors_content .list-group-item{
+    border: 1px solid #B4B4B4 !important;
+    padding: 0 !important;
+    margin-bottom: 20px !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    font-family: Outfit;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+cursor: pointer !important;
+}
+.doctors_content .list-group .active {
+    background-color: #E2E5FF !important;
+    color: #000B6D !important;
+}
+.doctors_content .pretitle{
+    font-family: Outfit;
+font-weight: 400;
+font-size: 20px;
+line-height: 27px;
+letter-spacing: 0%;
+padding-bottom: 20px !important;
+
+}
+
+/* =================================== */
+/* =================================== */
+/* =================================== */
+/* specific doctor section*/
+
+.specific_doctor_content { 
+    margin-top: 80px !important;
+}
+.specific_doctor_content .doctor_top .doctor_top_left img {
+    width: 100% !important;
+    height: 100% !important;
+    background-color: var(--mainText) !important;
+    border-radius: 12px !important;
+}
+.doctor_top_right{
+    border: 1px solid #ABABAB !important;
+    border-radius: 12px !important;
+    padding: 50px !important;
+    
+}
+@media (min-width:1400px) {
+    .doctor_top_right{
+        max-height: 376px !important;
+    }
+    .specific_doctor_content .doctor_top .doctor_top_left img{
+        max-height: 376px !important;
+    }
+
+}
+
+@media(max-width:768px){
+    .specific_doctor_content .doctor_top .doctor_top_left{
+        margin-bottom: 20px !important;
+    }
+
+}
+
+.doctor_top_right h4{
+    font-family: Outfit;
+font-weight: 500;
+font-size: 36px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.doctor_top_right h4 i{
+    font-size: 30px !important;
+    margin-left: 5px !important;
+    color: var(--mainText) !important;
+}
+.doctor_disc {
+    font-family: Outfit;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+letter-spacing: 0%;
+
+}
+
+.doctor_disc span{
+    background-color: white !important;
+    border: 1px solid #4B5563 !important;
+    color: #4B5563 !important;
+    margin-left: 10px !important;
+    padding: 8px 15px !important;
+    border-radius: 45px !important;
+}
+
+.doctor_about{
+    font-family: Outfit;
+font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: 0%;
+}
+
+.doctor_top_right h5{
+    padding-top: 20px !important;
+}
+.doctor_bottom .slots_title {
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding-top: 60px !important;
+    padding-bottom: 30px !important;
+}
+
+.doctor_bottom .day_button{
+    width: 87px !important;
+    height: 127px !important;
+    border-radius: 43.5px;
+    border: 1px solid #ABABAB !important;
+    padding: 25px !important;
+    margin: 10px !important;
+}       
+.doctor_bottom .hour_button{
+    width: 150px !important;
+    border-radius: 43.5px;
+    border: 1px solid #ABABAB !important;
+    padding: 15px !important;
+    margin: 5px !important;
+    
+}       
+.doctor_bottom button.active{
+    background-color: var(--mainText) !important;
+    color: white !important;
+}
+
+.book_slots{
+    width: 50% !important;
+    margin-top: 20px;
+    padding: 10px !important;
+}
+
+@media (max-width:576px) {
+
+    .related_doctors_part .card{
+        margin: auto auto 30px auto !important;
+    
+    }
+    
+}
+
+/* =================================== */
+/* =================================== */
+/* =================================== */
+/* signing page */
+.singing_page_card{
+    margin-top: 50px !important;
+    padding: 50px !important;
+    border-radius: 12px !important;
+    border: 1px solid rgba(212, 212, 212, 1) !important;
+    width: 500px !important;
+    height: 500px !important;
+    box-shadow: 0px 20px 50px 0px rgba(95, 111, 255, 0.1);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+@media (max-width: 500px){
+    .singing_page_card{
+        width: 90% !important;
+        margin: auto !important;
+        margin-top: 50px !important;
+
+    }
+    
+}
+.singing_page_card *{
+    margin-bottom: 0px !important;
+    padding-right: 0  !important;
+    padding-left: 0 !important;
+}
+.singing_page_card label{
+    padding-left:10px !important;
+}
+.singing_page_card .form-floating input{
+    padding-left: 10px !important;
+}
+.singing_page_card h5{
+    font-family: Outfit;
+font-weight: 600;
+font-size: 26px;
+line-height: 100%;
+letter-spacing: 0%; 
+}
+.singing_page_card p{
+    font-family: Outfit;
+font-weight: 400;
+font-size: 18px;
+line-height: 100%;
+vertical-align: middle;
+}
+
+.singing_page_card .approved_link{
+    height: fit-content;
+    padding: 15px;
+    font-family: Outfit;
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+
+/* ==================================== */
+/* ==================================== */
+/* user profile page */
+.navbar .dropdown-menu{
+    background-color: rgba(248, 248, 248, 1) !important;
+    padding: 0 !important;
+}
+.navbar .dropdown-menu li {
+    padding: 10px !important;
+}
+.navbar .dropdown-menu li:hover{
+    background-color: rgb(196, 196, 196) !important;
+}
+.navbar .dropdown-menu .drop_log:hover{
+    background-color: #dc3545 !important;
+}
+.navbar .dropdown-menu li a:hover {
+    background-color: unset !important
+}
+.navbar .dropdown{
+    margin-left: 23%;
+    cursor: pointer;
+}
+.navbar .dropdown-toggle::after{
+    content: none !important;
+}
+.navbar .dropdown-toggle i {
+    color: rgba(124, 124, 124, 1) !important;
+    font-size: 18px !important;
+    margin-left: -5px !important;
+}
+.navbar .dropdown img {
+    background-color: white !important;
+    border: none !important;
+    
+}
+@media (max-width:1400px) and (min-width: 1200px){
+    .navbar .dropdown{
+        margin-left: 17%;
+    }
+    
+}
+@media (max-width: 1200px){
+    .navbar .dropdown{
+        margin-left: 10%;
+    }
+    
+}
+@media (max-width: 992px){
+    .navbar .dropdown{
+        margin-left: 0;
+    }
+
+}
+@media (min-width: 992px){
+    .navbar .dropdown-menu{
+        top: 123% !important;
+        left: -95px !important;
+    }
+}
+
+
+.profile_content{
+    margin-top: 60px !important;
+}
+.profile_content img {
+    width: 160px;
+    height: 160px;
+    background-color: #ABABAB !important;
+    border-radius: 8px !important;
+}
+.profile_content h1{
+    padding-top: 50px !important;
+    /* padding-bottom: 50px !important; */
+}
+.profile_content .info_title{
+    color: rgba(121, 121, 121, 1);
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+}
+.profile_content .contact_info_basic .info_title {
+    margin-top: 30px !important;
+}
+.profile_content .info_blue{
+    color: var(--mainText);
+}
+.profile_content .sub_info_title {
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 18px;
+    vertical-align: middle;
+    color: rgba(75, 85, 99, 1) !important;    
+}
+.profile_content .profile_button{
+    color: rgba(75, 85, 99, 1) !important;
+    border: 1px solid rgba(95, 111, 255, 1) !important;
+    border-radius: 47px !important;
+    margin-top: 25px !important;
+    padding-right: 45px !important;
+    padding-left: 45px !important;
+    max-width: 210px !important;
+}
+
+.profile_content_part p , .profile_content_part input , .profile_content_part select{
+    margin-bottom: 20px !important;
+}
+
+/* ==================================== */
+/* ==================================== */
+/* ==================================== */
+/* appointment page */
+.my_appointemnt_page .my_appointment_content{
+    overflow: hidden !important;
+}
+.appointment_card{
+border: none !important;
+border-top: 1px solid rgba(209, 209, 209, 1) !important;    
+border-bottom: 1px solid rgba(209, 209, 209, 1) !important;    
+
+}
+
+.appointment_card {
+    margin-bottom: 50px !important;
+    padding: 20px !important;
+    border-radius: 0 !important;
+    text-align: start !important;
+    transition: none !important;
+    cursor: unset;
+}
+.appointment_card:hover {
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.appointment_card img{
+    background-color:rgba(234, 239, 255, 1) ;
+    width: 100% !important;
+    height: 100% !important;
+}
+.appointment_title {
+    font-family: Outfit;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+text-transform: capitalize;
+margin-top: 100px !important;
+margin-bottom: 30px !important;
+}
+.appointment_card h3 {
+font-weight: 500;
+font-size: 22px;
+line-height: 100%;
+letter-spacing: 0%;
+padding-bottom: 15px;
+}
+.appointment_card .appointment_pay_btn{ 
+    border-radius: 0 !important;
+    margin-bottom: 10px;
+    border: 1px solid rgb(196, 196, 196) !important;
+}
+.appointment_card .appointment_cancel_btn{ 
+    border-radius: 0 !important;
+    border: 1px solid rgb(196, 196, 196) !important;
+}
+.appointment_card .appointment_cancel_btn:hover{ 
+    background-color: #dc3545 !important;
+}
+
+@media (min-width:992px) {
+    .appointment_card .appointment_pay_btn , .appointment_card .appointment_cancel_btn{ 
+        width: 70% !important;
+        margin-left: 29%;
+    }
+}
+
+
+
+
+
+
+
+/* ========================================== */
+/* toast container */
+/* ========================================== */
+.toast-container{
+    animation: fadeIn .5s ease-in-out forwards;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+/* =========================================== */
+
+/* doctor_dashboard */
+.doctor_dashboard {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.doctor_dashboard .dash_navbar{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    border-bottom: 1px solid rgba(190, 190, 190, 1);
+}
+@media (max-width:576px) {
+    .doctor_dashboard .dash_navbar{
+        padding-right: 5px !important;
+        padding-left: 5px !important;
+    }
+}
+.doctor_dashboard .dash_navbar .create_acc{
+    width: 160px;
+    height: 49px;
+    padding: 0 !important;
+}
+.doctor_dashboard .dash_content{
+    min-height: calc(100vh - 94px ) !important;
+    
+}
+
+.css-dip3t8{
+    border-right: 1px solid rgba(190, 190, 190, 1);
+    background-color: rgb(255 255 255) !important;
+}
+
+
+/* ------------------------------ */
+/* default dashboard */
+.default_dash_content{
+    width: 50%;
+    margin-left: 10px ;
+}
+@media (max-width:1200px) {
+    .default_dash_content{
+        width: 100% !important;
+    }
+    .default_dash_content_top{
+        width: 50% !important;
+    }
+    .default_dash_content_bottom{
+        width: 70% !important;
+    }
+}
+
+@media (max-width:992px) {
+    .default_dash_content_bottom{
+        width: 95% !important;
+        margin-right: 20px !important;
+    }
+}
+
+@media (max-width:600px) {
+    .default_dash_content_top{
+        width: 70% !important;
+    }
+    .default_dash_content{
+        margin-left: 0 !important;
+    }
+    .default_dash_content .dash_card{
+        width: 100% !important;
+        margin-left: 10px !important;
+    }
+    .default_dash_content_bottom {
+        margin-left: 0 !important;
+    }
+
+}
+
+.default_dash_content .dash_card{
+    background-color: white !important;
+    height:115px !important ;
+    width: 244px ;
+    padding: 30px !important;
+    margin-top: 10px !important;
+    margin-left: 20px ;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out !important;
+}
+.default_dash_content .dash_card:hover{
+
+    transform: scale(1.05) !important;
+}
+.default_dash_content .dash_card img {
+    width: 66px !important;
+    height: 66px !important;
+}
+
+.default_dash_content .dash_card .dash_card_title{
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    margin-left: 10px !important;    
+}
+.default_dash_content .dash_card .dash_card_title p {
+    font-family: Outfit;
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+color:rgba(136, 147, 176, 1);
+margin-top: 10px !important;
+
+}
+
+.default_dash_content_bottom{
+    width: 100%;
+    background-color: white !important;
+    margin-left: 10px ;
+    margin-top: 50px !important;
+    padding: 20px !important;
+}
+
+.default_table_header{
+font-weight: 500;
+font-size:20px ;
+vertical-align: middle;
+}
+.default_table_header span {
+    margin-left: 10px !important;
+}
+.default_table_header i{
+    color: var(--mainText) !important;
+    font-size: 22px !important;
+}
+
+.default_table_body .cell_right img{
+    width: 52px !important;
+    height: 52px !important;
+    border-radius: 50% !important;
+    margin-right: 15px !important;
+}
+
+.default_table_body .cell_right .cell_title{
+font-weight: 500;
+font-size: 18px;
+line-height: 100%;
+color: var(--blackText1);
+padding-top: 5px !important;
+}
+@media (max-width:600px) {
+    .default_table_body .table_cell .cell_right , .default_table_body .table_cell .cell_left{
+    width: 100% !important;
+    }
+    .default_table_body .table_cell {
+        border-bottom: 1px solid rgba(209, 209, 209, 1) !important;
+    }
+    .default_table_body .table_cell .cell_left {
+        /* text-align: center; */
+        margin-top: 10px !important;
+    }
+}
+.default_table_body .cell_right .cell_title p {
+font-weight: 400;
+font-size: 16px;
+line-height: 100%;
+letter-spacing: 0%;
+color: rgba(105, 107, 128, 1);
+padding-top: 5px !important;
+}
+
+.default_table_body .table_cell{
+    padding-top: 15px !important;
+    padding: 10px;
+}
+.default_table_body .table_cell:hover{
+    background-color: rgb(248, 249, 253) !important;
+}
+/* ======================================= */
+ .accept_table{
+    width: 42px;
+    height: 42px;
+    border-radius: 50% !important;
+    margin-left: 10px ;
+    border: 1px solid rgb(167, 207, 187)!important;
+    color:rgb(167, 207, 187);
+    font-size: 18px !important;
+    background-color:  rgb(242, 253, 240);
+}
+
+ .cancel_table {
+    width: 42px ;
+    height: 42px ;
+    border-radius: 50% !important;
+    border: 1px solid rgba(255, 162, 162, 1)!important;
+    color:rgba(255, 162, 162, 1);
+    font-size: 18px !important;
+    background-color:  rgba(255, 231, 226, 1)  ;
+}
+ .completed_text{
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(167, 207, 187);
+    padding-right: 10px !important;
+
+}
+.cancelled_text{
+    font-weight: 500;
+    font-weight: 500;
+    font-size: 18px;
+    color:  rgba(255, 162, 162, 1);
+    padding-right: 10px !important;
+
+}
+/* @media (max-width:600px) {
+.default_table_body .accept_table{
+        margin-left: 0 !important;
+        margin-top: 5px !important;
+    }
+} */
+@media (max-width:1305px) {
+    .handle_td .accept_table{
+        margin-left: 5px !important;
+        margin-top: 5px !important;
+    }
+}
+@media (max-width:1600px){
+    .admin_table .handle_td .accept_table{
+        margin-left: 5px !important;
+        margin-top: 5px !important;
+    }
+}
+
+.table td , .table th{
+    border: none !important;
+}
+.table tr{
+    border-bottom: solid 1px rgba(209, 209, 209, 1) !important;
+}
+/* ======================================= */
+
+
+/* ------------------------------ */
+/* doctor appointments */
+
+.doctor_appontments_content .table{
+    background-color: white !important;
+    margin-top: 30px !important;
+    border: 1px solid rgb(196, 196, 196) !important;
+}
+/* @media (min-width:1600px) { */
+    
+    .doctor_appontments_content .table > :not(caption) > * > * {
+        padding: 1.5rem 1.5rem;
+    }
+/* } */
+
+.doctor_appontments_content h4 {
+    font-family: Outfit;
+font-weight: 500;
+font-size: 22px;
+
+vertical-align: middle;
+color: var(--blackText1);
+margin-top: 20px !important;
+
+}
+.doctor_appontments_content .table th{
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--blackText1);
+    text-wrap: nowrap;
+}
+
+.doctor_appontments_content .table td{
+    font-family: Outfit;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(105, 107, 128, 1);
+}
+
+
+.doctor_appontments_content .table .image_td img{
+    width: 42px ;
+    height: 42px ;
+    border-radius: 50% !important;
+}
+.doctor_appontments_content .table .image_td span{
+    margin-left: 10px !important;
+    margin-top: 7px !important;
+}
+
+/* ================================ */
+/* doctor profile */
+
+.doctor_profile_content img {
+    background-color: var(--mainText);
+    border-radius: 12px;
+    width: 300px !important;
+}
+@media (max-width:500px) {
+    .doctor_profile_content img {
+        width: 100% !important;
+    }
+    
+}
+.doctor_profile_content_up {
+    background-color: white !important;
+    padding: 30px !important;
+    margin-top: 40px ;
+    width: 50%;
+}
+@media (max-width:1200px) {
+    .doctor_profile_content_up {
+        width: 100%;
+    }
+}
+.doctor_profile_content .doctor_profile_content_form .doctor_profile_title{
+    font-family: sans-serif !important;
+}
+.doctor_profile_content .doctor_profile_content_form .doctor_disc{
+    color: rgba(105, 107, 128, 1)
+}
+.doctor_contact_info .badge{
+    color: rgba(105, 107, 128, 1) !important;
+    border-color: rgba(105, 107, 128, 1) !important;
+}
+.doctor_contact_info .sub_info_title{
+    font-size:18px;
+    font-weight: bolder !important;
+    margin-top: 20px !important;
+
+}
+.doctor_contact_info textarea{
+    min-height: 100px !important;
+}
+.doctor_contact_info .number_input , .doctor_contact_info .info_fee{
+    border: none;
+    width: 50px;
+    height: 30px;
+    margin-top: 20px !important;
+    margin-left: 15px !important;
+
+    
+}
+
+.doctor_contact_info .info , .doctor_contact_info textarea , .doctor_contact_info input {
+    color: rgba(105, 107, 128, 1) !important;
+
+}
+
+.doctor_profile_content .doctor_profile_button , .doctor_profile_content .doctor_edit_btn{
+    margin-top: 30px !important;
+    padding: 5px !important;
+    border: 1px solid var(--blackText1);
+    border-radius: 10px !important;
+    width: 150px ;
+}
+.doctor_profile_content button:hover{
+    background-color: var(--mainText) !important;
+    color: white !important;
+}
+/* ============================================= */
+
+/* dashboard login  */
+.dasboard_login{
+    margin-top: 0  !important;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.dasboard_login .singing_page_card{
+    margin-top: 0 !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 450px !important;
+    transform: translate(-50% , -50%) !important;
+}
+.dasboard_login .dashboard_login_title span{
+    color: var(--mainText);
+}
+.dasboard_login  .dashboard_login_btn{
+    border-radius: 5px !important;
+}
+
+/* ================================= */
+/* ================================= */
+/* ================================= */
+
+
+/* admin dashboard add doctor */
+.admin_add_doctor{
+    padding: 20px ;
+
+}
+.admin_add_doctor h4 {
+    font-family: Outfit;
+font-weight: 500;
+font-size: 22px;
+
+vertical-align: middle;
+color: var(--blackText1);
+}
+.admin_add_doctor .add_doctor_form_container{
+    margin-top: 30px;
+    background-color: white;
+    padding: 50px;
+    width: 100%;
+    border-radius: 10px;
+}
+@media (min-width:1350px) {
+    .admin_add_doctor .add_doctor_form_container{
+        width: 80%;
+    }
+    
+}
+@media (max-width:576px) {
+    .admin_add_doctor .add_doctor_form_container{
+        padding: 15px ;
+        padding-top: 50px ;
+        padding-bottom: 50px ;
+    }
+    .admin_add_doctor{
+        padding-right:0 ;
+        padding-left:0 ;
+    }
+    
+}
+.admin_add_doctor .add_doctor_form_container label{
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(93, 96, 125, 1);
+}
+
+.admin_add_doctor .add_doctor_form_container textarea{
+    min-height: 150px !important;
+}
+.admin_add_doctor .add_doctor_form_container .blue_btn{
+    width: 180px !important;
+    margin-top: 15px !important;
+    padding: 10px;
+}
+.admin_add_doctor .add_doctor_form_container .upload_area {
+    margin-bottom: 30px !important;
+}
+@media (max-width:470px ) {
+    .admin_add_doctor .add_doctor_form_container .upload_area {
+        text-align: center;
+    }
+    
+}
+.admin_add_doctor .add_doctor_form_container .upload_area span{
+    font-family: Outfit;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-left: 15px;
+    color: rgba(123, 123, 123, 1);
+}
+.admin_add_doctor .add_doctor_form_container .doctor_image{
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 50% !important;
+}
+
+/* ============================================ */
+/* ============================================ */
+
+/* admin doctor list */
+
+.doctor_list h4 {
+font-weight: 500;
+font-size: 22px;
+vertical-align: middle;
+color: var(--blackText1);
+margin-top: 20px !important;
+margin-bottom: 30px !important;
+
+}
+
+@media (min-width:1400px) {
+    .doctor_list .card{
+        margin-right: 30px !important;
+    }
+}
+
+@media (min-width:1100px) and (max-width:1400px) {
+    .doctor_list .card{
+        margin-right: 60px !important;
+    }
+}
+@media (max-width:1100px) and (min-width:992px) {
+    .doctor_list .card{
+        margin-right: 45px !important;
+    }
+    
+}
+@media (max-width:992px) {
+    .doctor_list .card{
+        margin-right: 30px !important;
+    }
+}
+
+.doctor_list  .card img{
+    transition: background-color 0.8s ease
+}
+.doctor_list  .card:hover {
+    transform: none !important;
+    transition: all 3s ease !important;
+    box-shadow: 0 8px 20px rgba(27, 27, 27, 0.1) !important;
+}
+.doctor_list .card:hover img{
+    background-color: var(--mainText) !important;
+}

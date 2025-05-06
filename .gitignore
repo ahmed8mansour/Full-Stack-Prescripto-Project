@@ -1,0 +1,20 @@
+# Global ignore
+.env/
+env/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+frontend/build/
+
+# OS + misc
+.DS_Store
+
+# Python (منع رفع الداتا بيز يا حنش )
+*.sqlite3
+*.log
+
+# IDEs
+.vscode/
+.idea/
