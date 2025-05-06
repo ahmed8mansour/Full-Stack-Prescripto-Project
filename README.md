@@ -33,7 +33,7 @@ Welcome to MNTN project – a stunning showcase of my work built with React.js.
 - js
 - react
 - redux toolkit
-```
+- -----
 - python
 - django
 - django rest framework
