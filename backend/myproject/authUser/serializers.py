@@ -131,6 +131,9 @@ class UserUpdateSerializer(serializers.ModelSerializer):
         user_data.pop('id', None)
         user_data.pop('user', None)
         return user_data
+    
+
+    
 # ----- register /
 class RegisterSerializer(serializers.ModelSerializer):
     password = serializers.CharField(write_only=True)

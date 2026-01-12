@@ -59,16 +59,38 @@ h2_available= {true}
             
             />
             
-        
-        <div className=' cards row justify-content-between align-items-stretch'>
-            {top_doctors}
+    
+        {
+            top_doctors && top_doctors.length > 0 ? (
+                <>
+                    <div className='cards row justify-content-between align-items-stretch'>
+                        {top_doctors}
+                    </div>
+                    <Link to={"/doctors"}>
+                        <button className='btn blue_btn more_btn' type="button" id="load_more" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            More
+                        </button>
+                    </Link>
+                </>
+            ) : (
+                <div className="no-doctors-error" style={{ 
+                    display: "flex", 
+                    flexDirection: "column", 
+                    alignItems: "center", 
+                    justifyContent: "center", 
+                    minHeight: "220px", 
+                    background: "#ffeaea", 
+                    border: "1px solid #ff5252",
+                    borderRadius: "16px", 
+                    boxShadow: "0 2px 12px rgba(255, 0, 0, 0.1)", 
+                    margin: "2rem auto" 
+                }}>
+                    <i className="fa-solid fa-triangle-exclamation" style={{color: "#ff5252", fontSize: "2.2rem", marginBottom: "1rem"}}></i>
+                    <p style={{color: "#d32f2f", fontWeight: "600", fontSize: "1.1rem"}}>Error (network): No doctors available to display at this time.</p>
+                    <span style={{color: "#b71c1c", fontSize: "0.95rem"}}>Please try again later.</span>
                 </div>
-
-        <Link to={"/doctors"}> 
-        <button className='btn blue_btn more_btn' type="button" id="load_more" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            More
-        </button>
-        </Link>
+            )
+        }
 
         
 

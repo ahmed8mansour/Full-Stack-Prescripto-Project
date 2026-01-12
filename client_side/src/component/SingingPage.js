@@ -67,10 +67,9 @@ async function handleSubmit(e) {
         console.log("تم التسجيل بنجاح");
         navigate('/my_profile');
     } catch (err) {
-        console.error("فشل في التسجيل:", err);
         SetexistAlert({
             show: true,
-            message: "the email or username is already associated with an existing account. Please log in or use a different email to register."
+            message: err
         })
 
     }
@@ -87,10 +86,16 @@ async function handleSubmit(e) {
             console.log("تم تسجيل الدخول");  
         })
     } catch (err) {
-
+        console.error("فشل في التسجيل:", err);
+        let message = ""
+        if(err.message === "Cannot read properties of undefined (reading 'non_field_errors')"){
+            message = "Network Error"
+        }else{
+            message = err.message
+        }
         SetexistAlert({
             show: true,
-            message: err
+            message: message
         })
     }
     }
