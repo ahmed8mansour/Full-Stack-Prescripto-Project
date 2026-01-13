@@ -20,7 +20,7 @@ export default function ContactUS(){
                         
                         <div className="contactus_content row">
                 <div className=" col-12 col-md-6  contactus_content_left">
-                    <img src={"/images/ContactUs/contact_image (1).png"} alt="about us" className="aboutus_img" />
+                    <img src={"/images/ContactUs/contact_image.png"} alt="about us" className="aboutus_img" />
                 </div>
                 <div className=" col-12 col-md-6  contactus_content_right">
                     
