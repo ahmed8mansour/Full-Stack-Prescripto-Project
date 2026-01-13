@@ -1,4 +1,3 @@
-
 // دالة للكشف عن نوع التوكن الموجود مع تفاصيل أكثر
 const detectUserType = () => {
     const tokenTypes = ['user', 'admin', 'doctor'];
@@ -47,9 +46,9 @@ const refreshTokens = async () => {
         
         if (!response.ok) {
             console.error("فشل التحديث:", data);
-            if (response.status === 401 || response.status === 400) {
-                logoutUser();
-        }
+        //     if (response.status === 401 || response.status === 400) {
+        //         logoutUser();
+        // }
         return false;
     }
     

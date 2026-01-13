@@ -1,24 +1,22 @@
 import React from "react";
 
 export default function Toast({ show , message  , onClose}) {
-    if(!show) return null
     React.useEffect(() => {
         if (show) {
             const toastEl = document.getElementById('liveToast');
             const toast = new window.bootstrap.Toast(toastEl);
             toast.show();
-            
+
             // إخفاء التوست تلقائياً بعد 5 ثواني
             const timer = setTimeout(() => {
-            onClose();
-        }, 5000);
-        
-        return () => clearTimeout(timer);
+                onClose();
+            }, 5000);
+
+            return () => clearTimeout(timer);
         }
     }, [show]);
 
-    console.log(window.bootstrap)
-    
+    if (!show) return null;
     return(
         <div style={{ zIndex: 9999 }} className="toast-container position-fixed top-0 end-0 p-3">
                 <div id="liveToast"  role="alert" className="toast" >
