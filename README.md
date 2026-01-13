@@ -1,8 +1,9 @@
-# Fantastic React MNTN Project 🚀
+# Fantastic React Prescripto-Project Project 🚀
 
-Welcome to MNTN project – a stunning showcase of my work built with React.js.
+Welcome to Prescripto-Project project – a stunning showcase of my work built with React.js.
 
 ## Features
+
 - 💻 Modern UI with animations — Built using React with smooth transitions and responsive layout.
 
 - 📱 Fully responsive — Optimized for desktops, tablets, and mobile devices.
@@ -25,21 +26,24 @@ Welcome to MNTN project – a stunning showcase of my work built with React.js.
 
 - 🌍 RESTful API integration — Frontend and backend communicate via clean, efficient API endpoints.
 
-
 ## 🛠 Tech Stack
+
 - html
 - CSS
 - bootstrap
 - js
 - react
 - redux toolkit
-- -----
+
+---
+
 - python
 - django
 - django rest framework
 - Simple Jwt Authentication
 
 ## 🚀 Quick Start
+
 1. Clone the repo:
    ```sh
    git clone https://github.com/ahmed8mansour/Full-Stack-Prescripto-Project.git
@@ -54,6 +58,7 @@ Welcome to MNTN project – a stunning showcase of my work built with React.js.
    ```
 
 ## 📂 Project Structure
+
 ```
 - Front end
 src/
@@ -64,6 +69,5 @@ src/
 ├──  App.jsx
 └── index.jsx
 ```
-
 
 Made with ❤️ by [ahmed8mansour]
