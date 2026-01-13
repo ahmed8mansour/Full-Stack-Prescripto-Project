@@ -3,7 +3,7 @@ import React from "react";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
 import ComponentHeader from "./ComponentHeader";
-
+import contactImage from "../images_css/about_image.png"
 export default function ContactUS(){
     return(
         <div className="contactuS_page my_section">
@@ -20,7 +20,7 @@ export default function ContactUS(){
                         
                         <div className="contactus_content row">
                 <div className=" col-12 col-md-6  contactus_content_left">
-                    <img src={"/images/ContactUs/contact_image.png"} alt="about us" className="aboutus_img" />
+                    <img src={contactImage} alt="about us" className="aboutus_img" />
                 </div>
                 <div className=" col-12 col-md-6  contactus_content_right">
                     
